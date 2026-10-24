@@ -1,15 +1,12 @@
 # System Optimizer & Performance Panel 🚀
 
-Aplicação desktop moderna desenvolvida em **C# WPF** (.NET 8) para automação, otimização de desempenho do sistema operacional e 
-ajustes avançados de periféricos, controlada por um painel centralizado.
+Aplicação desktop moderna desenvolvida em **C# WPF** (.NET 8) para automação, otimização de desempenho do sistema operacional e ajustes avançados de periféricos, controlada por um painel centralizado.
 
 ## 📌 Sobre o Projeto
 
-O **System Optimizer Panel** é um software modular de otimização para o Windows que combina um backend robusto em C# com rotinas de 
-automação avançadas (scripts `.bat`/`.cmd` e modificações de sistema). 
+O **System Optimizer Panel** é um software modular de otimização para o Windows que combina um backend robusto em C# com rotinas de automação avançadas (scripts `.bat`/`.cmd` e modificações de sistema). 
 
-O sistema executa scripts mestre em segundo plano com privilégios administrativos elevados, gerando relatórios de log 
-detalhados em tempo real para garantir total transparência nas alterações de desempenho.
+O sistema executa scripts mestre em segundo plano com privilégios administrativos elevados, gerando relatórios de log detalhados em tempo real para garantir total transparência nas alterações de desempenho.
 
 ## 🛠️ Funcionalidades Principais
 
@@ -26,6 +23,7 @@ detalhados em tempo real para garantir total transparência nas alterações de 
 
 ## 📁 Estrutura do Repositório
 
+```text
 painel-otimizacao/
 ├── bin/
 │   ├── cleanup/         # Scripts de limpeza de cache e logs do sistema
@@ -39,6 +37,7 @@ painel-otimizacao/
 ├── App.xaml / MainWindow.xaml   # Arquitetura e telas da aplicação WPF
 ├── PainelOtimizacao.csproj      # Configuração do projeto .NET
 └── README.md                    # Documentação do projeto
+```
 
 ## ⚙️ Como Executar Localmente
 
