@@ -1,52 +1,41 @@
 using System;
 using System.Diagnostics;
 using System.IO;
-using System.Threading.Tasks;
+using System.Windows;
 
 namespace PainelOtimizacao
 {
     public static class ScriptRunner
     {
-        private static readonly string BaseBinPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "bin");
-
-        public static async Task<bool> RunScriptAsync(string relativePath, string arguments = "")
+        public static void Executar(string subpasta, string nomeArquivo)
         {
-            return await Task.Run(() =>
+            try
             {
-                string? cleanRelativePath = relativePath?.Replace('/', Path.DirectorySeparatorChar);
-                if (string.IsNullOrEmpty(cleanRelativePath)) return false;
+                string caminhoBase = AppDomain.CurrentDomain.BaseDirectory;
+                string caminhoCompleto = Path.Combine(caminhoBase, "scripts", subpasta, nomeArquivo);
 
-                string scriptFullPath = Path.Combine(BaseBinPath, cleanRelativePath);
-
-                if (!File.Exists(scriptFullPath)) return false;
-
-                try
+                if (File.Exists(caminhoCompleto))
                 {
-                    string? workingDir = Path.GetDirectoryName(scriptFullPath);
-                    if (string.IsNullOrEmpty(workingDir)) return false;
-
                     ProcessStartInfo psi = new ProcessStartInfo
                     {
                         FileName = "cmd.exe",
-                        Arguments = $"/c \"\"{scriptFullPath}\" {arguments}\"",
+                        Arguments = $"/c \"{caminhoCompleto}\"",
                         UseShellExecute = false,
                         CreateNoWindow = true,
-                        WindowStyle = ProcessWindowStyle.Hidden,
-                        WorkingDirectory = workingDir
+                        RedirectStandardOutput = true
                     };
 
-                    using (Process? process = Process.Start(psi))
-                    {
-                        if (process == null) return false;
-                        process.WaitForExit();
-                        return process.ExitCode == 0;
-                    }
+                    Process.Start(psi);
                 }
-                catch
+                else
                 {
-                    return false;
+                    MessageBox.Show($"Script não encontrado:\n{caminhoCompleto}", "Erro de Execução", MessageBoxButton.OK, MessageBoxImage.Warning);
                 }
-            });
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erro ao tentar rodar o script: {ex.Message}", "Erro Crítico", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
     }
 }

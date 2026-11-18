@@ -1,8 +1,7 @@
 using System.Windows;
 
-namespace PainelOtimizacao
+namespace PainelOtimizacaoDx;
+
+public partial class App : Application
 {
-    public partial class App : Application
-    {
-    }
 }

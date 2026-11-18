@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Diego Rossetto\\Desktop\\Nova pasta (8)\\backup_PAINEL\\painel-otimizacao\\PainelOtimizacao.csproj": {}
+    "C:\\Users\\Diego Rossetto\\Desktop\\Portifolio\\Projeto otimizar\\painel-otimizacao\\PainelOtimizacao.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Diego Rossetto\\Desktop\\Nova pasta (8)\\backup_PAINEL\\painel-otimizacao\\PainelOtimizacao.csproj": {
+    "C:\\Users\\Diego Rossetto\\Desktop\\Portifolio\\Projeto otimizar\\painel-otimizacao\\PainelOtimizacao.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Diego Rossetto\\Desktop\\Nova pasta (8)\\backup_PAINEL\\painel-otimizacao\\PainelOtimizacao.csproj",
+        "projectUniqueName": "C:\\Users\\Diego Rossetto\\Desktop\\Portifolio\\Projeto otimizar\\painel-otimizacao\\PainelOtimizacao.csproj",
         "projectName": "PainelOtimizacao",
-        "projectPath": "C:\\Users\\Diego Rossetto\\Desktop\\Nova pasta (8)\\backup_PAINEL\\painel-otimizacao\\PainelOtimizacao.csproj",
+        "projectPath": "C:\\Users\\Diego Rossetto\\Desktop\\Portifolio\\Projeto otimizar\\painel-otimizacao\\PainelOtimizacao.csproj",
         "packagesPath": "C:\\Users\\Diego Rossetto\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Diego Rossetto\\Desktop\\Nova pasta (8)\\backup_PAINEL\\painel-otimizacao\\obj\\",
+        "outputPath": "C:\\Users\\Diego Rossetto\\Desktop\\Portifolio\\Projeto otimizar\\painel-otimizacao\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Diego Rossetto\\AppData\\Roaming\\NuGet\\NuGet.Config"

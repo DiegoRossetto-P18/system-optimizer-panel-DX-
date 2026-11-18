@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RtxtrseB48Q=",
+  "dgSpecHash": "XzZ7Uya2lSA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Diego Rossetto\\Desktop\\Nova pasta (8)\\backup_PAINEL\\painel-otimizacao\\PainelOtimizacao.csproj",
+  "projectFilePath": "C:\\Users\\Diego Rossetto\\Desktop\\Portifolio\\Projeto otimizar\\painel-otimizacao\\PainelOtimizacaoDx.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Diego Rossetto\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.32\\microsoft.netcore.app.ref.8.0.32.nupkg.sha512",
     "C:\\Users\\Diego Rossetto\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.32\\microsoft.windowsdesktop.app.ref.8.0.32.nupkg.sha512",

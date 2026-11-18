@@ -1,7 +1,9 @@
-<Application x:Class="PainelOtimizacao.App"
+<Application x:Class="PainelOtimizacaoDx.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
+        <FontFamily x:Key="UiFont">Segoe UI</FontFamily>
+        <FontFamily x:Key="DisplayFont">Segoe UI Semibold</FontFamily>
     </Application.Resources>
 </Application>
